@@ -90,7 +90,7 @@ export default function BaroldFormulaire() {
     doc.save(`Proposition_Barold_${formData.nomProposant || 'Client'}.pdf`);
   };
 
-  // --- FONCTION D'ENVOI EMAILJS ---
+  // --- FONCTION D'ENVOI EMAILJS (CORRIGÉE) ---
   const handleSubmit = async () => {
     if (!formData.nomProposant) {
       alert("Veuillez entrer le nom du proposant avant d'envoyer.");
@@ -110,9 +110,9 @@ export default function BaroldFormulaire() {
     try {
       const response = await emailjs.send(
         'service_3nzz4gj', 
-        'template_8w44yz5', 
+        'template_2pnk0gg', // ID Corrigé
         templateParams,
-        'diETOYFuHDO5ykoIM' 
+        'diETOYFuHDO5ykoIM' // Public Key
       );
 
       if (response.status === 200) {
