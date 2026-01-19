@@ -89,8 +89,7 @@ export default function BaroldFormulaire() {
         <div className="flex justify-between items-start mb-6">
           <div className="text-left">
             <img src="/logo-barold.png" alt="BAROLD ASSURANCES" className="h-14 mb-1" />
-            <p className="font-bold text-[12px]">SOCIAL DE CUARTARE</p>
-          </div>
+                     </div>
           <div className="border border-black p-2 w-72 italic bg-gray-50">
             <p className="font-bold underline not-italic mb-1">(Partie à Réservée à l'agent)</p>
             <div className="grid grid-cols-1 gap-1">
